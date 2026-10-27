@@ -1,4 +1,3 @@
-
 function mostrarPonto(nome) {
     const locais = {
         "EcoPonto Verde": {
@@ -26,15 +25,30 @@ function mostrarPonto(nome) {
     const local = locais[nome];
     const informacao = document.getElementById("informacao");
 
-    if (!local || !informacao) {
-        return;
-    }
+    if (!local || !informacao) return;
 
+    // Remove a marcação de todos os pontos
+    document.querySelectorAll(".reciclagem").forEach(ponto => {
+        ponto.classList.remove("selecionado");
+        ponto.setAttribute("aria-pressed", "false");
+    });
+
+    // Marca o ponto selecionado
+    const botoes = document.querySelectorAll(".reciclagem");
+
+    botoes.forEach(botao => {
+        if (botao.getAttribute("onclick").includes(nome)) {
+            botao.classList.add("selecionado");
+            botao.setAttribute("aria-pressed", "true");
+        }
+    });
+
+    // Atualiza as informações do local
     informacao.innerHTML = `
         <h3>♻️ ${nome}</h3>
 
         <p>
-            <strong>Distância simulada:</strong>
+            <strong>Distância:</strong>
             ${local.distancia}
         </p>
 
@@ -54,3 +68,13 @@ function mostrarPonto(nome) {
         </p>
     `;
 }
+
+
+document.querySelectorAll(".faq-pergunta").forEach(botao => {
+    botao.addEventListener("click", () => {
+      const card = botao.closest(".faq-card");
+      const aberto = card.classList.toggle("aberto");
+
+      botao.setAttribute("aria-expanded", aberto);
+    });
+  });
