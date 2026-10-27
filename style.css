@@ -6,7 +6,7 @@
 body {
     padding: 0;
     margin: 2%;
-    background-color: #285A48;
+    background-color: #135512;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -75,7 +75,6 @@ a {
 
 main {
     margin: 20px;
-    padding: 12px; 
     text-align: center;
     border-radius: 10px;
 }
@@ -98,12 +97,13 @@ section {
 .principal{
     display: flex;
     justify-content: space-around;
-    padding: 20px 0;
+    background-color: #096b02;
+    width: 100%;
 }
 
 .logoBaner{
     width: 100%;
-    max-width: 40%;
+    max-width: 70%;
 }
 
 .card {
@@ -161,4 +161,25 @@ footer{
     padding: 20px 80px;
     margin: 20px;
     border-radius: 8px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.destaque{
+    background-color: orange;
+}
+
+.entrada:hover{
+    background-color: green;
+}
+
+h3{
+    font-size: 36px;
+}
+
+.esquerdaBaner{
+    font-size: 24px;
+    font-weight: 600;
+    width: 100%;
+    max-width: 40%;
 }
