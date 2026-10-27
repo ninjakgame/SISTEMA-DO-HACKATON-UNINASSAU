@@ -1,0 +1,164 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 2%;
+    background-color: #285A48;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    font-weight: 800;
+    font-size: 24px;
+}
+
+img {
+    border-radius: 20px;
+}
+
+.logo {
+    width: 65px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin: 10px 20px;
+    background-color: rgb(43, 255, 0);
+}
+
+.esquerda {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex: 0 1 30%;
+}
+
+.navegacao {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.navegation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.iconeNavegation {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+}
+
+.navegation:hover {
+    transform: scale(1.05);
+}
+
+main {
+    margin: 20px;
+    padding: 12px; 
+    text-align: center;
+    border-radius: 10px;
+}
+
+section {
+    padding: 2px;
+}
+
+
+.video-local {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.principal{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.logoBaner{
+    width: 100%;
+    max-width: 40%;
+}
+
+.card {
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    text-align: center;
+}
+
+.cardConteudo {
+    width: 100%;
+    max-width: 400px;
+    font-weight: 400;
+    background-color: green;
+    font-size: 18px;
+
+    text-align: left;
+    line-height: 1.4;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    box-shadow: 2px 4px 0 4px rgba(0, 0, 0, 0.105);
+}
+
+.cardConteudo:hover{
+    transform: scale(1.05);
+}
+
+.imagemCard{
+    width: 100%;
+    padding: 20px;
+    height: 220px;
+    border-radius: 50px;
+}
+
+.titulo{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+footer{
+    text-align: center;
+    font-size: 24px;
+}
+
+/*Banner*/
+.entrada{
+    border: none;
+    background-color: #096b02;
+    color: white;
+    padding: 20px 80px;
+    margin: 20px;
+    border-radius: 8px;
+}

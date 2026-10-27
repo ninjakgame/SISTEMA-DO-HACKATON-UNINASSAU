@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECO SYSTEM</title>
+    <link rel="stylesheet" href="minimapa.css">
+</head>
+
+<body>
+    <header>
+        <div class="esquerda">
+            <img src="LOGO-removebg-preview.png" alt="Logo ECO SYSTEM" class="logo">
+            <p>ECO SYSTEM</p>
+        </div>
+
+        <nav class="navegacao">
+            <div class="navegation">
+                <img src="homeflat_106039.png" class="iconeNavegation" alt="">
+                <a href="index.html">Página Principal</a>
+            </div>
+
+            <div class="navegation">
+                <img src="icons8-mapa-da-apple-64.png" class="iconeNavegation" alt="">
+                <a href="minimapa.html">Mini Mapa</a>
+            </div>
+
+            <div class="navegation">
+                <img src="icons8-pergunte-50.png" class="iconeNavegation" alt="">
+                <a href="quiz.html">Quiz</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="conteudo">
+                <div class="mapa">
+
+                    <div class="quadra q1"></div>
+                    <div class="quadra q2"></div>
+                    <div class="quadra q3"></div>
+                    <div class="quadra q4"></div>
+                    <div class="parque"></div>
+
+                    <!-- Ruas simuladas -->
+                    <div class="rua rua1"></div>
+                    <div class="rua rua2"></div>
+                    <div class="rua rua3"></div>
+
+                    <!-- Nomes das áreas -->
+                    <div class="nome-area area1">BAIRRO DAS FLORES</div>
+                    <div class="nome-area area2">ÁREA VERDE</div>
+                    <div class="nome-area area3">AVENIDA CENTRAL</div>
+
+                    <!-- Posição fictícia do usuário -->
+                    <div class="usuario">
+                        <div class="ponto-azul"></div>
+                        <div class="etiqueta">Você está aqui (simulado)</div>
+                    </div>
+
+                    <!-- Pontos fictícios de reciclagem -->
+                    <button type="button" class="reciclagem ponto-a" onclick="mostrarPonto('EcoPonto Verde')">
+                        ♻️
+                    </button>
+
+                    <button type="button" class="reciclagem ponto-b" onclick="mostrarPonto('Centro de Reciclagem')">
+                        ♻️
+                    </button>
+
+                    <button type="button" class="reciclagem ponto-c" onclick="mostrarPonto('Coleta Sustentável')">
+                        ♻️
+                    </button>
+
+                    <!-- Legenda -->
+                    <div class="legenda">
+                        <span><i class="legenda-azul"></i> Sua posição</span>
+                        <span>♻️ Reciclagem</span>
+                    </div>
+                </div>
+
+                <!-- Informações dos pontos -->
+                <div id="informacao" aria-live="polite">
+                    <h3>Explore os pontos</h3>
+                    <p>
+                        Clique em um ponto verde do mapa para ver
+                        os materiais aceitos e a distância simulada.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="minimaps.js"></script>
+</body>
+
+</html>
