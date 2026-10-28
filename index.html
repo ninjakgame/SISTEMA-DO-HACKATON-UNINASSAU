@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ECO SYSTEM</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -227,13 +228,27 @@
                 </div>
             </div>
         </section>
+
+         <section>
+      <h2>Pontos de coleta</h2>
+      <p>Selecione um marcador para consultar as informações.</p>
+      <div id="mapa" aria-label="Mapa ilustrativo dos pontos de coleta"></div>
+      <div id="detalhes-ponto" aria-live="polite">
+        Selecione um ponto no mapa.
+      </div>
+    </section>
+
+    <section>
+      <h2>Dúvidas sobre reciclagem</h2>
+      <div id="lista-duvidas" aria-live="polite">
+        Carregando dúvidas...
+      </div>
+    </section>
     </main>
 
     <footer>
         &copy; ECO SYSTEM
     </footer>
-
-    <script src="script.js"></script>
 </body>
 
 </html>
